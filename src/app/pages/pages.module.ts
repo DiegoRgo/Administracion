@@ -9,13 +9,15 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 
 /*importacion de las rutas hijas*/
 import { PAGES_ROUTES } from './pages.routes';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
+        AccoutSettingsComponent
     ],
     exports: [
         DashboardComponent,

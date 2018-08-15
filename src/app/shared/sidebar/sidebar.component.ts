@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarService, UsuarioService } from '../../services/service.index';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor( public _sidebar: SidebarService,
+               public _usuarioService: UsuarioService ) {}
 
   ngOnInit() {
+
   }
 
+// tslint:disable-next-line:eofline
+// tslint:disable-next-line:angular-whitespace
+// tslint:disable-next-line:eofline
+// tslint:disable-next-line:angular-whitespace
 }

@@ -5,7 +5,8 @@ import { SettingsService,
          SidebarService,
          SharedService,
          UsuarioService,
-         LoginGuardGuard } from './service.index';
+         LoginGuardGuard,
+         SubirImgService } from './service.index';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     SidebarService,
     SharedService,
     UsuarioService,
-    LoginGuardGuard
+    LoginGuardGuard,
+    SubirImgService
   ],
   declarations: []
 })

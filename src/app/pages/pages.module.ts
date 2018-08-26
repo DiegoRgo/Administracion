@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -7,9 +9,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 
+
+/*Pipes Module*/
+import { PipesModule } from '../pipes/pipes.module';
+
 /*importacion de las rutas hijas*/
 import { PAGES_ROUTES } from './pages.routes';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { ProfileComponent } from './profile/profile.component';
+
+
 
 @NgModule({
     declarations: [
@@ -17,7 +26,8 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        AccoutSettingsComponent
+        AccoutSettingsComponent,
+        ProfileComponent
     ],
     exports: [
         DashboardComponent,
@@ -25,8 +35,12 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
         Graficas1Component
     ],
     imports: [
+        CommonModule,
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        PipesModule,
+        FormsModule,
+        ReactiveFormsModule
     ]
 })
 export class PagesModule { }

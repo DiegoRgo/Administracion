@@ -19,6 +19,7 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
 import { ProfileComponent } from './profile/profile.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
 
@@ -31,7 +32,8 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
         AccoutSettingsComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModalUploadComponent
+        ModalUploadComponent,
+        BusquedaComponent
     ],
     exports: [
         DashboardComponent,
